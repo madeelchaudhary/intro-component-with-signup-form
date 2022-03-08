@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Intro component with sign up form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+  <main>
+    <section class="landing-page">
+      <div class="container">
+        <div class="grid">
+          <div class="content-block">
+            <header>
+              <h1 class="title">
+                Learn to code by watching others
+              </h1>
+            </header>
+            <p class="section-description">
+              See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+              but understanding how developers think is invaluable.
+            </p>
+          </div>
+          <div class="form-block">
+            <article role="alert" class="alert">
+              <p class="alert-content">
+                <strong>
+                  Try it free 7 days
+                </strong>
+                then $20/mo. thereafter
+              </p>
+            </article>
+            <div class="form-wrapper">
+              <form action="">
+                <div class="input-control">
+                  <input type="text" name="first_name" id="firstName" data-error="First Name cannot be empty"
+                    placeholder="First Name">
+                  <p role="alert"></p>
+                </div>
+                <div class="input-control">
+                  <input type="text" name="last_name" id="lastName" data-error="Last Name cannot be empty"
+                    placeholder="Last Name">
+                  <p role="alert"></p>
+                </div>
+                <div class="input-control">
+                  <input type="email" name="user_email" id="email" data-error='{"empty": "Email cannot be empty"
+                    , "invalid" : "Looks like this is not an email" }' placeholder="Email Address">
+                  <p role="alert"></p>
+                </div>
+                <div class="input-control">
+                  <input type="password" name="user_password" id="password" data-error="Password cannot be empty"
+                    placeholder="Password">
+                  <p role="alert"></p>
+                </div>
+                <button type="submit" class="btn">Claim your free trial</button>
+                <p class="fade" role="note">
+                  By clicking the button, you are agreeing to our <a href="#" class="terms-link">Terms and Services</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+
+</html>
